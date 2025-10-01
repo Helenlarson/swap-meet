@@ -41,3 +41,11 @@ class Vendor:
         their_first = other_vendor.inventory[0] 
 
         return self.swap_items(other_vendor, my_first, their_first)
+    
+    # Wave 6 starts here #
+
+    def get_by_category(self, category: str):
+        return [item for item in self.inventory if item item_.get_category() == category]
+
+    def get_best_by_category(self, category: str):
+        
